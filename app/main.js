@@ -1,5 +1,6 @@
 //当前版本号
-var version = "1.0";
+var version = Math.random();
+
 //require配置
 require.config({
     baseUrl: "app/",
