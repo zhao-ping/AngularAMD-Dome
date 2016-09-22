@@ -28,8 +28,8 @@ define(["angularAMD","angular-route"], function (angularAMD) {
     app.config(["$routeProvider",function (a) {
         a.when("/home", angularAMD.route({
             templateUrl: 'views/index.html',
-            //controller: 'indexCtrl',
-            //controllerUrl: 'controller/index'
+            controller: 'indexCtrl',
+            controllerUrl: 'controller/indexCtrl'
         }))
         .otherwise({redirectTo:"/home"})
     }]);

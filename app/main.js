@@ -22,7 +22,7 @@ require.config({
     },
 
     // kick start application
-    deps: ['app'],
+    deps: ['app'],//加载app.js（异步加载）
     urlArgs: version
 });
 
