@@ -1,2 +1,2 @@
 # AngularAMD-Dome
-测试
+angularAMD详解请参照：https://github.com/marcoslin/angularAMD
