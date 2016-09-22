@@ -27,8 +27,8 @@ define(["angularAMD","angular-route"], function (angularAMD) {
     //APP路由配置
     app.config(["$routeProvider",function (a) {
         a.when("/home", angularAMD.route({
-            templateUrl: 'views/index.html',
-            controller: 'indexCtrl',
+          	templateUrl: 'views/index.html' ,
+            controller: 'indexCtrl',//注意：这里定义了控制器，在相应的 templateUrl: 'views/index.html'里不用定义ng-controller
             controllerUrl: 'controller/indexCtrl'
         }))
         .otherwise({redirectTo:"/home"})
