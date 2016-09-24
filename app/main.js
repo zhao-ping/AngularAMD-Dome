@@ -14,6 +14,7 @@ require.config({
         'angular': 'js/angular.min',
         "angular-route": "js/angular-route",
         'angularAMD': 'js/angularAMD.min',
+        'ionic' : 'js/ionic.bundle.min',
     },
     // Add angular modules that does not support AMD out of the box, put it in a shim
     shim: {

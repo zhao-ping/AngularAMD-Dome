@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 		<title></title>
 		<script data-main="app/main.js" defer async="true" src="app/require.js"></script>
+		<link rel="stylesheet" href="app/css/animate.min.css" />
+		<style>
+		*{margin: 0;padding: 0;}
+			#container.ng-enter {
+				-webkit-animation: fadeInLeft 0.5s both ease-in;
+				-moz-animation: fadeInLeft 0.5s both ease-in;
+				animation: fadeInLeft 0.5s both ease-in;
+				z-index: 100;
+			}
+			
+			#container.ng-leave {
+				-webkit-animation: fadeOutRight 1s both ease-in;
+				-moz-animation: fadeOutRight 1s both ease-in;
+				animation: fadeOutRight 1s both ease-in;
+				z-index: -1;
+			}
+		</style>
 	</head>
+
 	<body>
-		<ul>
-			<li><a href="index.html#/home">home</a></li>
-		</ul>
-	<div class="container" ng-view></div>
+
+		<div class="container" id="container" ng-view></div>
 	</body>
+
 </html>
